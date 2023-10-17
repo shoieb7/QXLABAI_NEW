@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+  <title>Qx Lab AI</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg content-header">
+    <div class="container-fluid" style="padding: 0 24px;">
+      <div class="header-logo">
+        <a href="overView.html">QX LAB AI</a>
+      </div>
+      <button class="navbar-toggler ps-0 pe-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-md-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active res-active custom-res-text" aria-current="page" href="overView.html">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-res-none" href="documentation.html">Documentation</a>
+            <div class="accordion res-header-bar-list" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Documentation
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <a href="documentation.html">
+                      Introduction
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="quick-start.html">
+                      Quickstart
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="libraries.html">
+                      Libraries
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="models.html">
+                      Models
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="deprecations.html">
+                      Deprecations
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="tutorials.html">
+                      Tutorials
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="policies.html">
+                      Policies
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Guides
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <a href="GPT-Models.html">
+                      GPT
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="gpt-best-practices.html">
+                      GPT best practices
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="image-generation.html">
+                      Image generation
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="fine-tuning.html">
+                      Fine-tuning
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="embeddings.html">
+                      Embeddings
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="speech-to-text.html">
+                      Speech to text
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="moderation.html">
+                      moderation
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="rate-limits.html">
+                      rate-limits
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="error-codes.html">
+                      Error codes
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="safety-best-practices.html">
+                      Safety best practices
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="production-best-practices.html">
+                      Production best practices
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Plugins
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <a href="plugins-introduction.html">
+                      Introduction
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="plugins-getting-started.html">
+                      Getting started
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="plugins-authentication.html">
+                      Authentication
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="plugins-examples.html">
+                      Examples
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="plugins-production.html">
+                      Production
+                    </a>
+                  </div>
+                  <div class="accordion-body">
+                    <a href="plugins-review.html">
+                      Plugin review
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <a href="api-reference.html" class="accordion-button collapsed pt-1 pb-1">
+                    API reference
+                  </a>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <a href="examples.html" class="accordion-button collapsed pt-1 pb-1">
+                    Examples
+                  </a>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <a class="accordion-button collapsed pt-1 pb-1">
+                    Log in
+                  </a>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <a class="accordion-button collapsed pt-1 pb-1">
+                    Sign up
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-res-none" href="api-reference.html">API reference</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-res-none" href="examples.html">Examples</a>
+          </li>
+        </ul>
+        <div class="res-flex">
+          <button type="button" class="btn d-res-none btn-text">Log in</button>
+          <button type="button" class="btn logInbtn d-res-none btn-text">Sign up</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="d-flex layout">
+    <div class="overView-content">
+      <div class="back-bg">
+        <div class="overView-content-spacing overView-content-spacing-wrapper">
+          <h1 class="anchor-heading text-white mb-4">Welcome to the QX LabAI platform</h1>
+          <div class="row custom-gap ovr-shortcuts">
+            <div class="col-lg-6">
+              <div class="box-content-wrapper">
+                <div class="conten-Box-Wrapper">
+                  <a href="documentation.html" class="">
+                    <div class="overView-gradient-bg">
+                      <img src="./images/gradient_card_1.png" alt="gradient-color"
+                        class="img-fluid ovr-card opacity-0" />
+                      <div class="gradient-box-content">
+                        <div>
+                          <img src="./images/tutorials.png" class="img-box-wrapper-circle"/>
+                        </div>
+                        <div class="ovr-card-title body-large bold title-text">Quickstart tutorial</div>
+                        <div class="ovr-card-desc body-small title-sub-text">Learn by building a quick sample app</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-content-wrapper">
+                <div class="conten-Box-Wrapper">
+                  <a href="examples.html" class="ovr-card">
+                    <div class="overView-gradient-bg ovr-card">
+                      <img src="./images/gradient_card_2.png" alt="gradient-color"
+                        class="img-fluid ovr-card opacity-0" />
+                      <div class="gradient-box-content ">
+                        <div>
+                          <img src="./images/example1.png" class="img-box-wrapper-circle"/>
+                        </div>
+                        <div class="ovr-card-title body-large bold title-text">Examples</div>
+                        <div class="ovr-card-desc body-small title-sub-text">Explore some example tasks</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="custom-bg-icon-wrapper overView-content-spacing overView-content-spacing-wrapper">
+        <h2 class="anchor-heading-root mt-2">Build an application</h2> 
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <a href="GPT-Models.html">
+              <div class="custom-shape-bg-overview">
+                <div class="d-flex align-items-center">
+                  <div class="purple-gradient-bg light-blue-bg">
+                    <img src="./images/gpt.png" class="box-image"/>
+                  </div>
+                  <div class="ms-3">
+                    <div class="icon-item-title">GPT</div>
+                    <div class="icon-item-desc">Learn how to generate text</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 mb-3">
+            <a href="gpt-best-practices.html">
+              <div class="custom-shape-bg-overview">
+                <div class="d-flex align-items-center">
+                  <div class="green-gradient-bg light-grey-bg">
+                    <img src="./images/pen.png" class="box-image"/>
+                  </div>
+                  <div class="ms-3">
+                    <div class="icon-item-title">GPT best practices</div>
+                    <div class="icon-item-desc">Learn best practices for building with GPT models</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 mb-3">
+            <a href="embeddings.html">
+              <div class="custom-shape-bg-overview">
+                <div class="d-flex align-items-center">
+                  <div class="orange-gradient-bg light-orange-bg">
+                    <img src="./images/embedding.png" class="box-image"/>
+                  </div>
+                  <div class="ms-3">
+                    <div class="icon-item-title">Embeddings</div>
+                    <div class="icon-item-desc">Learn how to search, classify, and compare text</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 mb-3">
+            <a href="speech-to-text.html">
+              <div class="custom-shape-bg-overview">
+                <div class="d-flex align-items-center">
+                  <div class="red-gradient-bg light-green-bg">
+                    <img src="./images/speech.png" class="box-image"/>
+                  </div>
+                  <div class="ms-3">
+                    <div class="icon-item-title">Speech to text</div>
+                    <div class="icon-item-desc">Learn how to turn speech into text</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 mb-3">
+            <a href="image-generation.html">
+              <div class="custom-shape-bg-overview">
+                <div class="d-flex align-items-center">
+                  <div class="purple-gradient-bg light-purple-bg">
+                    <img src="./images/image.png" class="box-image"/>
+                  </div>
+                  <div class="ms-3">
+                    <div class="icon-item-title">Image generation</div>
+                    <div class="icon-item-desc">Learn how to generate or edit images</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 mb-3">
+            <a href="fine-tuning.html">
+              <div class="custom-shape-bg-overview">
+                <div class="d-flex align-items-center">
+                  <div class="green-gradient-bg light-pine-bg">
+                    <img src="./images/layer.png" class="box-image"/>
+                  </div>
+                  <div class="ms-3">
+                    <div class="icon-item-title">Fine-tuning</div>
+                    <div class="icon-item-desc">Learn how to train a model for your use case</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="custom-bg-icon-wrapper overView-content-spacing overView-content-spacing-wrapper mt-5 mb-5">
+        <h2 class="anchor-heading-root mt-2">Build a Ask Qx plugin</h2> 
+        <div class="row">
+          <div class="col-md-6  mb-3">
+            <a href="plugins-introduction.html">
+              <div class="custom-shape-bg-overview">
+                <div class="d-flex align-items-center">
+                  <div class="red-gradient-bg light-blue-bg">
+                    <img src="./images/home.png" class="box-image"/>
+                  </div>
+                  <div class="ms-3">
+                    <div class="icon-item-title">Introduction</div>
+                    <div class="icon-item-desc">Learn the basics of building a Ask Qx plugin</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 mb-3">
+            <a href="plugins-examples.html">
+              <div class="custom-shape-bg-overview">
+                <div class="d-flex align-items-center">
+                  <div class="orange-gradient-bg light-green-bg">
+                    <img src="./images/book.png" class="box-image"/>
+                  </div>
+                  <div class="ms-3">
+                    <div class="icon-item-title">Examples</div>
+                    <div class="icon-item-desc">Explore Ask Qx plugin examples</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="ovr-footer pt-16 pb-16 ">
+        <div class="custom-container mx-auto">
+          <div class="ovr-footer-grid">
+            <div class="ovr-footer-item">
+              <div class="d-flex justify-content-center">
+                <div class="white-gradient-bg">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20px"
+                    height="20px">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M21.6 12a9.6 9.6 0 11-19.2 0 9.6 9.6 0 0119.2 0zm-2.4 0c0 1.192-.29 2.315-.802 3.305l-1.828-1.83a4.797 4.797 0 00.093-2.62l1.875-1.874c.424.918.662 1.939.662 3.019zm-6.198 4.696l1.896 1.896c-.913.402-1.9.609-2.898.608a7.17 7.17 0 01-3.02-.662l1.875-1.875a4.807 4.807 0 002.147.033zM7.389 13.34a4.802 4.802 0 01-.049-2.496l-.096.096L5.408 9.1A7.176 7.176 0 004.8 12c0 1.145.268 2.227.743 3.188L7.39 13.34h-.002zM8.695 5.6A7.17 7.17 0 0112 4.8c1.145 0 2.227.268 3.188.743L13.34 7.39a4.802 4.802 0 00-2.815.04L8.695 5.6zM14.4 12a2.4 2.4 0 11-4.801 0 2.4 2.4 0 014.8 0z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+              <div class="ovr-footer-title body-large bold mt-2 text-white">Help center</div>
+              <div class="ovr-footer-desc body-small mt-2 text-white">
+                Answers to frequently asked account and billing questions.
+              </div>
+              <div class="ovr-footer-links body-small mt-2">
+                <a href="javascript:void(0)">Visit help center</a>
+              </div>
+            </div>
+            <div class="ovr-footer-item">
+              <div class="d-flex justify-content-center">
+                <div class="white-gradient-bg">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20px"
+                    height="20px">
+                    <path
+                      d="M2.4 6a2.4 2.4 0 012.4-2.4h8.4A2.4 2.4 0 0115.6 6v4.8a2.4 2.4 0 01-2.4 2.4h-2.4l-3.6 3.6v-3.6H4.8a2.4 2.4 0 01-2.4-2.4V6z">
+                    </path>
+                    <path
+                      d="M18 8.4v2.4a4.8 4.8 0 01-4.8 4.8h-1.406l-2.12 2.12c.336.18.72.28 1.126.28h2.4l3.6 3.6V18h2.4a2.4 2.4 0 002.4-2.4v-4.8a2.4 2.4 0 00-2.4-2.4H18z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+              <div class="ovr-footer-title body-large bold mt-2 text-white">Developer forum</div>
+              <div class="ovr-footer-desc body-small mt-2 text-white">
+                Ask questions and discuss topics with other developers.
+              </div>
+              <div class="ovr-footer-links body-small mt-2">
+                <a href="javascript:void(0)">Visit developer forum</a>
+              </div>
+            </div>
+            <div class="ovr-footer-item">
+              <div class="d-flex justify-content-center">
+                <div class="white-gradient-bg">
+                  <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                    stroke-linejoin="round" width="1em" height="1em" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="2"></circle>
+                    <path
+                      d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+              <div class="ovr-footer-title body-large bold mt-2 text-white">Service status</div>
+              <div class="ovr-footer-desc body-small mt-2 text-white">
+                Check the status of QX LabAI services.
+              </div>
+              <div class="ovr-footer-links body-small mt-2">
+                <a href="javascript:void(0)">Visit status page</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
